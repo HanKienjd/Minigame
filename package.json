@@ -1,5 +1,5 @@
 {
-  "name": "miniGame",
+  "name": "minigame",
   "version": "1.0.0",
   "description": "Speed typing game written in vanilla JS",
   "main": "index.js",

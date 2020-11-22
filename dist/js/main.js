@@ -62,7 +62,7 @@ const words = [
   'nhap dau nhap dau',
   'tay dau tay dau',
   'mau mat ma',
-  'ma ma chao ca nha',
+  'mat ma chao ca nha',
   'vo tay doan ket',
   'can gi can gi',
   'sach sanh sanh',
