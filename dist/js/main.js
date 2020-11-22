@@ -4,13 +4,13 @@ window.addEventListener('load', init);
 
 // Available Levels
 const levels = {
-  easy: 5,
-  medium: 3,
-  hard: 1
+  easy: 8,
+  medium: 5,
+  hard: 3
 };
 
 // To change level
-const currentLevel = levels.medium;
+const currentLevel = levels.easy;
 
 let time = currentLevel;
 let score = 0;
@@ -50,7 +50,26 @@ const words = [
   'magic',
   'master',
   'space',
-  'definition'
+  'definition',
+  'anh em oi',
+  'cac ban oi',
+  'minh can minh can',
+  'tron chua tron chua',
+  'mo khoa trai tim',
+  'chia se yeu thuong',
+  'tiep thi tiep u thi tiep thi tiep',
+  'moi xinh mim chat',
+  'nhap dau nhap dau',
+  'tay dau tay dau',
+  'mau mat ma',
+  'ma ma chao ca nha',
+  'vo tay doan ket',
+  'can gi can gi',
+  'sach sanh sanh',
+  'chen',
+  'chim cut xoi xeo',
+  'cho duoi cho duoi',
+  'duoi ai duoi ai',
 ];
 
 // Initialize Game
@@ -76,7 +95,7 @@ function startMatch() {
     wordInput.value = '';
     score++;
   }
-  
+
   // Highscore based on score value for Session Storage
   if (typeof sessionStorage['highscore'] === 'undefined' || score > sessionStorage['highscore']) {
     sessionStorage['highscore'] = score;
@@ -86,7 +105,7 @@ function startMatch() {
 
   // Prevent display of High Score: -1
   if (sessionStorage['highscore'] >= 0) {
-  highscoreDisplay.innerHTML = sessionStorage['highscore'];
+    highscoreDisplay.innerHTML = sessionStorage['highscore'];
   }
 
   // If score is -1, display 0
@@ -136,4 +155,9 @@ function checkStatus() {
     message.innerHTML = 'Game Over!!!';
     score = -1;
   }
+}
+
+window.onload = () => {
+  const myInput = document.getElementById('word-input');
+  myInput.onpaste = e => e.preventDefault();
 }

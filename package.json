@@ -1,14 +1,14 @@
 {
-  "name": "wordbeater",
+  "name": "miniGame",
   "version": "1.0.0",
   "description": "Speed typing game written in vanilla JS",
   "main": "index.js",
   "scripts": {
     "deploy": "gh-pages -d dist"
   },
-  "author": "Brad Traversy",
+  "author": "HanKienjd",
   "license": "MIT",
-  "homepage": "https://bradtraversy.github.io/wordbeater",
+  "homepage": "https://HanKienjd.github.io/Minigame",
   "dependencies": {
     "gh-pages": "^1.2.0"
   }

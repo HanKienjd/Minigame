@@ -1,0 +1,131 @@
+.mb-5,
+.my-5 {
+  margin-bottom: 2rem !important;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('./img/COV.png');
+
+  /* Full height */
+
+  height: 800px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; */
+  background-size: cover;
+}
+
+.btn {
+  border: 1px solid #fff;
+  background: #333;
+  width: 80px;
+  margin-top: 30px;
+}
+
+.display-2 {
+  font-style: bold;
+}
+
+.coutdown-clock {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#send {
+  color: #396;
+  font-weight: 2em;
+  font-size: 40px;
+  margin: 10px;
+  text-align: center;
+
+}
+
+#clockdiv {
+  font-family: sans-serif;
+  color: #fff;
+  display: inline-block;
+  /* font-weight: ; */
+  text-align: center;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#clockdiv>div {
+  padding: 10px;
+  border-radius: 3px;
+  /* background: #00BF96; */
+  background: #212529;
+  display: inline-block;
+  align-items: center;
+  opacity: .7;
+  margin-left: 30px;
+
+}
+
+#clockdiv div>span {
+  padding: 15px;
+  border-radius: 3px;
+  background: #212529;
+  /* display: inline-block; */
+}
+
+.smalltext {
+  padding-top: 5px;
+  font-size: 16px;
+}
+
+/* Responsive */
+@media (min-width:320px) {
+  .parallax {
+    height: 400px;
+    background-size: cover;
+  }
+
+  .display-2 {
+    font-size: 2em;
+  }
+
+  body {
+    font-size: 1em;
+  }
+
+  #clockdiv {
+    display: flex;
+    font-size: 9px;
+  }
+
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+}
+
+@media (min-width:480px) {
+
+  /* smartphones, Android phones, landscape iPhone */
+  .parallax {
+    height: 450px;
+    background-size: cover;
+  }
+}
+
+@media (min-width : 996px) {
+  .parallax {
+    height: 600px;
+  }
+
+  .display-2 {
+    font-size: 3em;
+  }
+
+  #clockdiv {
+    font-size: 30px;
+    display: inline-block;
+  }
+}
